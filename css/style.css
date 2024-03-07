@@ -1,0 +1,383 @@
+html{
+    scroll-behavior: smooth;
+    
+}
+
+#btnup{
+    scroll-behavior: smooth;
+}
+nav{
+    z-index: 5;
+}
+.home-link {
+   position: relative;
+}
+.home-link::after{
+    content: ' ';
+    position: absolute;
+    width: 40%;
+    transform: scaleX(2);
+    height: 3px;
+    bottom: 0px;
+    left: 18px;
+    background-color: white;
+    
+    /* transform-origin: bottom left;
+    transition: transform 0.7s ease-out; */
+  }
+
+
+.others{
+    position: relative;
+}
+   
+.others::after{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0px;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom left;
+    transition: transform 0.7s ease-out;
+}
+  
+.others:hover::after {
+    transform: scaleX(1);
+    /* transform-origin: bottom left; */
+}
+
+
+header{
+    background-image: url(../images/14ac5da4-76e9-4c95-befa-eb61c7476c8c.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#navcaption{
+    font-size: 28px;
+}
+.describtion h2::after{
+    content: "|";
+    animation-name: jobs;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes jobs{
+    0%{
+        content :" D|" ;
+    }
+    7%{
+        content :"De|" ;
+    }
+    14%{
+        content :"Dev|" ;
+    }
+    21%{
+        content :" Deve|" ;
+    }
+    28%{
+        content: "Develo|";
+    }
+    35%{
+        content :"Develop|" ;
+    }
+    42%{
+        content: "Develope|";
+    }
+    49%{
+        content : "Developer|";
+    }
+    56%{
+        content: "Develope|";
+        
+    }
+    63%{
+        content :"Develop|" ;
+        
+    }
+    70%{
+        content: "Develo|";
+        
+    }
+    77%{
+        content :" Deve|" ;
+    }
+    84%{
+        content :"Dev|" ;
+    }
+    91%{
+        content :"De|" ;
+    }
+    98%{
+        content :" D|" ;
+    }
+    100%{
+        content: "|";
+    }
+
+
+
+
+
+}
+
+.div-ul{
+    position: absolute;
+    top: 0;
+    right: 120px ;
+    opacity: 0;
+    transition: all 0.5s;
+    width: 180px;
+    
+
+}
+
+.deepee-ul{
+    top: 80px;
+   
+    opacity: 0;
+    transition: all 1s;
+}
+
+.deepee-ul:hover .deep-li{
+   
+        top: 0; 
+        opacity: 1;
+  
+}
+.deep-li a{
+    color: black;
+   
+}
+.deepee-ul a{
+    transition: all 1s;
+}
+.deepee-ul li a:hover{    
+            color: blue;
+           
+}
+.deepdropli:hover {
+    .div-ul{  
+        transform: translate(-2px,0);
+        opacity: 1;
+    }
+}
+
+.icon{
+    width: 2rem;
+    height: 2rem;
+    color: black;
+    border: 4px #0078ff solid;
+    transition: all 1.3s;
+}
+
+.icon:hover{
+    background-color: #0078ff;
+    border: 4px rgba(148, 142, 142, 0.853) solid;
+   
+   
+}
+.iconee{
+    color: black;
+    transition: all 1.3s ;
+}
+.icon:hover{
+    .iconee{
+        color: white;
+    }
+}
+
+.percentage-skill{
+    height: 20px;
+    background-image: linear-gradient(to right , #0078ff 100% , #cde1f8 0%);
+
+}
+.percentage-skill-2{
+    height: 20px;
+    background-image: linear-gradient(to right , #0078ff 100% , #cde1f8 0%);
+
+}
+.percentage-skill-3{
+    height: 20px;
+    background-image: linear-gradient(to right , #0078ff 95% , #cde1f8 95%);
+
+}
+.percentage-skill-4{
+    height: 20px;
+    background-image: linear-gradient(to right , #0078ff 90% , #cde1f8 90%);
+
+}
+.about-me-line{
+    position: relative;
+}
+.about-me-line::after{
+    content: "";
+    width: 20%;
+   
+    height: .2em;
+    
+    /* background-color: var(--c-title-underline-color); */
+    background-color:#0078ff;
+    
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+}
+
+.underline{
+    
+    position: relative;
+}
+
+.underline::after {
+    content: "";
+    width: 8%;
+   
+    height: .4em;
+    
+    /* background-color: var(--c-title-underline-color); */
+    background-color:#0078ff;
+    
+    position: absolute;
+    bottom: -20px;
+    left: 180px;
+    
+  }
+
+
+.serv-icon{
+    width: 120px;
+    height: 120px;
+    border: 10px solid #0078ff;
+   
+}
+
+.serv-icon{
+    transition: all 1s;
+}
+.service-section:hover{
+   .serv-icon{
+       background-color: #0078ff;
+       border: 10px solid #cdcecf;
+       color: white;
+   }
+}
+.othersection{
+    background-image: url(../images/post-3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+}
+
+
+.othersection-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0078ff;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+.othersection-icon{
+    width: 50px;
+    height: 50px;
+    border: 8px solid #ffffff;
+   
+}
+.porti-icon{
+    width: 40px;
+    height: 40px;
+    border: 4px solid #0078ff;
+}
+.portifolo-image img{
+    translate: scale(1);
+    transition: all 1s;
+}
+.portifolo-size:hover{
+    .portifolo-image img{
+        transform: scale(1.5);
+    }
+}
+
+
+.blog-p{
+    position: relative;
+}
+
+.blog-p::after {
+    content: "";
+    width: 8%;
+   
+    height: .4em;
+    
+    /* background-color: var(--c-title-underline-color); */
+    background-color:#0078ff;
+    
+    position: absolute;
+    bottom: -20px;
+    left: 180px;
+    
+  }
+
+  .slider{
+    background-image: url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+  }
+
+
+
+.contact{
+    background-image: url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    position:relative ;
+    z-index: 0;
+}
+.contact-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0078ff;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+.container .sendmessage .button-inside .button-contact{
+    background-color: royalblue;
+     transition: all 1s;
+}
+.container .sendmessage .button-inside .button-contact:hover{
+   background-color: lightskyblue ;
+   -webkit-box-shadow: 0px 0px 0px 4px #D5F3FF; 
+box-shadow: 0px 0px 0px 4px #D5F3FF;
+}
+.con-line{
+    position: relative;
+}
+
+
+.con-line::after {
+    content: "";
+    width: 15%;
+   
+    height: .1em;
+    
+    /* background-color: var(--c-title-underline-color); */
+    background-color:#0078ff;
+    
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+}
